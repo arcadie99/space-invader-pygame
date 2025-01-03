@@ -15,6 +15,8 @@ def main():
     enemyKills = 0;
 
     pygame.init()
+    pygame.display.set_caption("Spaceship Invaders");
+    
     clock = pygame.time.Clock()
     dt = 0
 
