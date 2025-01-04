@@ -19,7 +19,8 @@ class Asteroid(CircleShape):
     def detectColision(self, object):
         distance = self.position.distance_to(object.position)
         if distance < self.radius + object.radius:
-            exit()
+            return True
+        return False
 
     def detectShotColision(self, object):
         distance = self.position.distance_to(object.position)
