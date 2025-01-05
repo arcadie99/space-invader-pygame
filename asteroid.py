@@ -4,11 +4,11 @@ from constants import *
 import random
 
 class Asteroid(CircleShape):
-    containers = ()  # Static containers for sprite groups
+    containers = ()
 
     def __init__(self, x, y, radius):
         super().__init__(x, y, radius)
-        self.velocity = pygame.Vector2(0, 0)  # Default velocity
+        self.velocity = pygame.Vector2(0, 0)
 
     def draw(self, screen):
         pygame.draw.circle(screen, (200, 200, 200), self.position, self.radius, 2)

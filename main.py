@@ -40,34 +40,24 @@ def button_draw(screen, info):
 
 # --- Button Actions ---
 
-
 def on_click_button_1():
     global stage
     stage = 'game'
-    print('You clicked Button 1')
-
 
 def on_click_button_2():
     global stage
     stage = 'options'
-    print('You clicked Button 2')
-
 
 def on_click_button_3():
     global stage, running
     stage = 'exit'
     running = False
-    print('You clicked Button 3')
-
 
 def on_click_button_return():
     global stage
     stage = 'menu'
-    print('You clicked Button Return')
-
 
 # --- Main Program ---
-
 
 def main():
     global stage, running
@@ -134,10 +124,6 @@ def main():
                         enemy_kills += 1
                         shot.kill()
                         break
-
-                # if asteroid.detectColision(player):
-                #     print("Game Over!")
-                #     running = False  # End game on collision
 
                 if asteroid.detectColision(player):
                     print("Game Over!")

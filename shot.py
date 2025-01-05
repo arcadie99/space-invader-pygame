@@ -2,7 +2,7 @@ from circleshape import CircleShape
 import pygame
 
 class Shot(CircleShape):
-    containers = ()  # Static containers for sprite groups 
+    containers = () 
 
     def __init__(self, x, y, radius):
         super().__init__(x, y, radius)
